@@ -72,10 +72,10 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden min-h-[85vh] md:min-h-screen">
         <div className="absolute inset-0">
           <video
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-center"
             autoPlay
             loop
             muted
@@ -86,7 +86,7 @@ export default function HomePage() {
           </video>
           <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/70 to-black/40" />
         </div>
-        <div className="container relative z-10 grid gap-12 py-32 md:grid-cols-[1.1fr,0.9fr] md:items-center">
+        <div className="container relative z-10 grid gap-8 py-16 md:gap-12 md:py-32 md:grid-cols-[1.1fr,0.9fr] md:items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -95,27 +95,27 @@ export default function HomePage() {
             <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-white">
               <Sparkles className="h-4 w-4" /> Social-first agency
             </div>
-            <h1 className="mt-6 text-4xl font-black text-white sm:text-5xl lg:text-6xl">
+            <h1 className="mt-4 text-3xl font-black text-white sm:mt-6 sm:text-4xl md:text-5xl lg:text-6xl">
               Social Media That Moves Brands Forward
             </h1>
-            <p className="mt-6 text-lg text-white/80 sm:text-xl">
+            <p className="mt-4 text-base text-white/80 sm:mt-6 sm:text-lg md:text-xl">
               At iManage Socials, we create stories, build communities, and grow brands through strategic digital marketing.
             </p>
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Button size="lg" className="text-base shadow-2xl shadow-primary/40" asChild>
+            <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:gap-4">
+              <Button size="lg" className="text-sm shadow-2xl shadow-primary/40 sm:text-base" asChild>
                 <Link href="/services">
                   Explore Our Services
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button size="lg" variant="secondary" className="bg-white/15 text-white hover:bg-white/25" asChild>
+              <Button size="lg" variant="secondary" className="bg-white/15 text-white hover:bg-white/25 text-sm sm:text-base" asChild>
                 <Link href="/contact">
                   Get A Free Consultation
                   <PlayCircle className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
             </div>
-            <div className="mt-10 grid gap-6 sm:grid-cols-3">
+            <div className="mt-6 grid gap-4 sm:mt-10 sm:grid-cols-3 sm:gap-6">
               {heroStats.map((stat) => (
                 <div
                   key={stat.label}
@@ -132,7 +132,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="space-y-5 rounded-3xl bg-white/10 p-8 text-white backdrop-blur-2xl"
+            className="hidden space-y-5 rounded-3xl bg-white/10 p-6 text-white backdrop-blur-2xl md:block md:p-8"
           >
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/70">Featured Case Study</p>
             <h3 className="text-2xl font-bold leading-tight">
