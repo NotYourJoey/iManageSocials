@@ -35,7 +35,7 @@ const contactMethods = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'info@imanagesocisals.com',
+    value: 'info@imanagesocials.com',
     href: 'mailto:info@imanagesocisals.com',
     description: 'We reply within 24 hrs',
   },
