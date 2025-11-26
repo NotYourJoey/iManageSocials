@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
@@ -97,7 +97,7 @@ export default function Header() {
                   )}
                 >
                   <span>{link.label}</span>
-                  <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Go</span>
+                  <ArrowRight className="h-4 w-4 text-muted-foreground" />
                 </Link>
               </button>
             ))}

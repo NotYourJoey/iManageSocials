@@ -89,8 +89,8 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="relative overflow-hidden py-24">
         <div className="absolute inset-0 bg-gradient-to-br from-[#06142a] via-[#0c2442] to-[#06142a]" />
-        <div className="container relative z-10 grid gap-10 text-white lg:grid-cols-[1.1fr,0.9fr] lg:items-center">
-          <div className="space-y-6">
+        <div className="container relative z-10 grid gap-10 text-white lg:grid-cols-[1.1fr,0.9fr] lg:items-end">
+          <div className="space-y-6 flex flex-col">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-6 py-2 text-xs font-semibold uppercase tracking-[0.4em]">
               Let&apos;s talk
             </span>
@@ -100,11 +100,11 @@ export default function ContactPage() {
               your brand, platforms, and performance goals.
             </p>
             <div className="flex flex-wrap gap-4">
-              <div className="rounded-2xl border border-white/20 bg-white/10 px-6 py-4">
+              <div className="flex-1 min-w-[140px] rounded-2xl border border-white/20 bg-white/10 px-6 py-4">
                 <p className="text-2xl font-black text-secondary">48h</p>
                 <p className="text-xs uppercase tracking-[0.3em] text-white/70">Proposal turnaround</p>
               </div>
-              <div className="rounded-2xl border border-white/20 bg-white/10 px-6 py-4">
+              <div className="flex-1 min-w-[140px] rounded-2xl border border-white/20 bg-white/10 px-6 py-4">
                 <p className="text-2xl font-black text-secondary">24/7</p>
                 <p className="text-xs uppercase tracking-[0.3em] text-white/70">Community support</p>
               </div>
@@ -118,18 +118,20 @@ export default function ContactPage() {
             <p className="mt-4 text-2xl font-semibold">
               Book a 30-min strategy call to review your current content and growth opportunities.
             </p>
-            <Button variant="secondary" className="mt-6 bg-white text-primary hover:bg-white/90" asChild>
-              <a href="mailto:info@imanagesocisals.com?subject=Strategy%20Call">Book via email</a>
-            </Button>
+            <div className="mt-6 flex justify-end">
+              <Button variant="secondary" className="bg-white text-primary hover:bg-white/90" asChild>
+                <a href="mailto:info@imanagesocisals.com?subject=Strategy%20Call">Book via email</a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Contact section */}
       <section className="section-wrapper">
-        <div className="container grid gap-12 lg:grid-cols-[1.1fr,0.9fr]">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <div className="rounded-[32px] border border-white/70 bg-white p-8 shadow-xl shadow-primary/5">
+        <div className="container grid gap-12 lg:grid-cols-[1.1fr,0.9fr] lg:items-stretch">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex">
+            <div className="flex flex-col w-full rounded-[32px] border border-white/70 bg-white p-8 shadow-xl shadow-primary/5">
               <h2 className="text-2xl font-bold">Send Us A Message</h2>
               <p className="mt-2 text-sm text-muted-foreground">
                 Fill the form and we&apos;ll reply with next steps, timelines, and investment options.
@@ -200,8 +202,8 @@ export default function ContactPage() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <div className="rounded-[32px] border border-white/70 bg-white p-8 shadow-xl shadow-secondary/10">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex">
+            <div className="flex flex-col w-full rounded-[32px] border border-white/70 bg-white p-8 shadow-xl shadow-secondary/10">
               <h2 className="text-2xl font-bold">Direct Contact</h2>
               <p className="mt-2 text-sm text-muted-foreground">Prefer a quick reply? Use any of these channels.</p>
               <div className="mt-8 space-y-5">

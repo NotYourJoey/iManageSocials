@@ -101,9 +101,9 @@ export default function ServicesPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="grid gap-10 rounded-[32px] border border-white/70 bg-white/90 p-10 shadow-xl shadow-secondary/10 lg:grid-cols-[1.2fr,0.8fr] lg:items-center"
+              className="grid gap-10 rounded-[32px] border border-white/70 bg-white/90 p-10 shadow-xl shadow-secondary/10 lg:grid-cols-[1.2fr,0.8fr] lg:items-end"
             >
-              <div>
+              <div className="flex flex-col">
                 <div className="inline-flex items-center gap-3 rounded-full bg-primary/10 px-4 py-2 text-primary">
                   <service.icon className="h-5 w-5" />
                   <span className="text-sm font-semibold uppercase tracking-[0.3em]">Core service</span>
@@ -118,7 +118,7 @@ export default function ServicesPage() {
                   ))}
                 </ul>
               </div>
-              <div className="rounded-[28px] bg-gradient-to-br from-primary/10 to-secondary/10 p-8 text-sm text-muted-foreground">
+              <div className="flex flex-col rounded-[28px] bg-gradient-to-br from-primary/10 to-secondary/10 p-8 text-sm text-muted-foreground">
                 <p className="font-semibold text-foreground">What this unlocks</p>
                 <ul className="mt-4 space-y-3">
                   <li>• Consistent publishing without burnout</li>
