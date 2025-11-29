@@ -3,10 +3,10 @@ import Link from 'next/link'
 import { Mail, Phone, MessageCircle } from 'lucide-react'
 
 const socials = [
-  { href: 'https://instagram.com', label: 'Instagram' },
-  { href: 'https://facebook.com', label: 'Facebook' },
-  { href: 'https://linkedin.com', label: 'LinkedIn' },
-  { href: 'https://tiktok.com', label: 'TikTok' },
+  { href: 'https://www.instagram.com/imanage.socials?igsh=c2t6d2R1MHFycGhn', label: 'Instagram' },
+  { href: 'https://www.facebook.com/share/17PxLGKjH9/?mibextid=wwXIfr', label: 'Facebook' },
+  { href: 'https://x.com/imanagesocials?s=21', label: 'X' },
+  { href: 'https://www.tiktok.com/@imanagesocials?_r=1&_t=ZM-91n9GjInIx1', label: 'TikTok' },
 ]
 
 export default function Footer() {
