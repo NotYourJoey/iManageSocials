@@ -6,11 +6,6 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'iManage Socials - Social Media That Moves Brands Forward',
   description: 'At iManage Socials, we create stories, build communities, and grow brands through strategic digital marketing.',
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/logo.jpg',
-  },
 }
 
 export default function RootLayout({
