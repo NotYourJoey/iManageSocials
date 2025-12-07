@@ -7,13 +7,9 @@ export const metadata: Metadata = {
   title: 'iManage Socials - Social Media That Moves Brands Forward',
   description: 'At iManage Socials, we create stories, build communities, and grow brands through strategic digital marketing.',
   icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/icon.png', type: 'image/png', sizes: '32x32' },
-    ],
-    apple: [
-      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
-    ],
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
 }
 
