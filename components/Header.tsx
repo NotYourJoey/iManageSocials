@@ -45,7 +45,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-1 rounded-full bg-white/80 px-2 py-1 shadow-inner shadow-white/30 border border-white/50">
+        <nav className="hidden md:flex items-center space-x-1 rounded-full bg-white/80 px-2 py-1 shadow-inner shadow-white/30 border border-black">
           {navLinks.map((link) => (
             <Link
               key={link.href}

@@ -77,7 +77,7 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-secondary" />
                 <a href="mailto:info@imanagesocials.com" className="hover:text-white">
-                  info@imanagesocisals.com
+                  info@imanagesocials.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
